@@ -2,6 +2,7 @@
 body {
     font-family: 'Lato' , sans-serif;
     font-family: 'Open Sans', sans-serif;
+    font-weight: ;
 }
 
 .text-primary {
@@ -19,11 +20,15 @@ body {
 .btn-primary:hover{
     background: gray;
 }
-/* Nav related Styles */
+
+/*------------------------
+   Nav related Styles
+-------------------------*/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 200px;
 }
 
 .nav-title {
@@ -45,4 +50,24 @@ nav li{
 nav a{
     text-decoration: none;
     color: #474747;
+}
+
+/*---------------------------
+    Header Section
+--------------------------*/
+
+.header{
+    background-color: #FFF8F3;
+}
+.banner{
+    padding: 30px 30px 30px 200px;
+    display: flex;
+    align-items: center;
+}
+.banner-content{
+    
+}
+.banner .profile-picture{
+    width: 500px;
+    padding-right: 100px;
 }
