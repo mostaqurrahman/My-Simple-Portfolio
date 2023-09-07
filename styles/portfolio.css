@@ -17,10 +17,12 @@ body {
     font-weight: 700;
     padding: 15px 30px;
 }
-.num-link{
+
+.num-link {
     text-decoration: none;
     color: none;
 }
+
 .btn-primary:hover {
     background: green;
 }
@@ -235,7 +237,8 @@ hr {
     font-weight: 400;
     line-height: 28px;
 }
-.btn-container{
+
+.btn-container {
     margin-top: 50px;
     text-align: center;
 }
@@ -243,7 +246,7 @@ hr {
 /*---------------------------
         Footer Style
 --------------------------*/
-footer{
+footer {
     margin-top: 100px;
     display: flex;
     gap: 100px;
@@ -251,22 +254,133 @@ footer{
     padding: 130px 180px;
 }
 
-.footer-colum{
+.footer-colum {
     width: 50%;
 }
-footer .section-title{
+
+footer .section-title {
     text-align: left;
 }
-.social-links a{
+
+.social-links a {
     margin-right: 24px;
 }
-.contact-form input[type = "text"], input[type = "email"], textarea{
+
+.contact-form input[type="text"], input[type="email"], textarea {
     display: block;
     margin-bottom: 24px;
     padding: 18px 35px;
-    color:#757575;
+    color: #757575;
     border-radius: 5px;
     background: #FFF;
     border: 0;
     width: 100%;
+}
+
+/*----------------------------------
+        Responsive Section
+--------------------------------*/
+
+/*------ Responsive For Mobile Device-------*/
+@media screen and (max-width: 576px) {
+    .header {
+        background-image: none;
+    }
+
+    nav,
+    nav>ul,
+    .banner,
+    .skills-container,
+    .resume-container,
+    footer,
+    .about-info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about, .what-i-do {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .banner .profile-picture {
+        width: 100%;
+    }
+
+    .banner,
+    #what-i-do-description,
+    footer, .about {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 65px;
+    }
+
+    nav>ul {
+        gap: 25px;
+    }
+
+    nav>ul>li {
+        font-weight: 600;
+    }
+
+    #nav-btn {
+        font-weight: 800;
+        padding: 10px 30px;
+    }
+
+    .footer-colum {
+        width: 100%;
+    }
+
+    .contact-form input[type="text"], input[type="email"], textarea {
+        width: 80%;
+    }
+}
+
+/*------ Medium Device ------*/
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .skills-container {
+        gap: 5px;
+    }
+
+    nav>ul {
+        gap: 15px;
+    }
+
+    nav>ul>li {
+        font-weight: 600;
+    }
+
+    .banner,
+    .skills-container,
+    .resume-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    nav,
+    nav>ul {
+        /* flex-direction: column; */
+        text-align: center;
+    }
+
+    nav, .nav-title {
+        margin: 0;
+        padding: 5px 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #what-i-do-description, .about, footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contact-form input[type="text"], input[type="email"], textarea {
+        width: 70%;
+    }
 }
